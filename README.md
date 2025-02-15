@@ -15,11 +15,5 @@ Mi objetivo es crecer profesionalmente y mejorar mis habilidades en el ámbito d
 - **Backend:** Java
 - **Herramientas:** Git, GitHub, Visual Studio Code
 
-## 🌟 Proyectos destacados
-
-### 1. CLIMASER ❄️
-- **Descripción:** Página web desarrollada para el negocio familiar de refrigeración, con el objetivo de establecer presencia en internet y atraer más clientes.
-- **Tecnologías:** HTML, CSS, JavaScript
-- **Enlace al repositorio:** [Ver en GitHub](https://github.com/tu-usuario/climaser-web)
 
    
