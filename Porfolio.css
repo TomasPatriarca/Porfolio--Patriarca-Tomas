@@ -1,0 +1,422 @@
+:root {
+  --color-primary: #1e90ff;
+  --color-secondary: #1e90ff;
+  --color-background: #111111;
+  --color-text: #ffffff;
+  --color-text-light: #ffffff;
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Urbanist", sans-serif;
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: white;
+  text-align: center;
+}
+/* Animaciones */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Sección de Inicio */
+#inicio {
+  padding: 50px 20px;
+}
+
+/* Reducir margen entre el nombre y la leyenda */
+#inicio h1 {
+  margin-bottom: 5px; /* Reduce espacio debajo del nombre */
+  font-size: 2.5em;
+}
+
+#inicio p {
+  margin-top: 0; /* Elimina cualquier margen superior */
+  font-size: 1.2em;
+  opacity: 0.8;
+}
+
+/* Botón de descarga */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #1e90ff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+}
+
+/* Efecto de iluminación en títulos */
+h1,
+h2,
+h3 {
+  transition: 0.3s ease-in-out;
+}
+
+h1:hover,
+h2:hover,
+h3:hover {
+  text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
+}
+
+/* Tipografías y colores en títulos */
+h1,
+h2,
+h3 {
+  font-family: var(--font-primary);
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--color-text-light);
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
+/* Header */
+header {
+  background: var(--color-background);
+  padding: 1.5rem 0;
+  border-bottom: 2px solid var(--color-text);
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: var(--color-secondary);
+}
+
+/* Secciones */
+/* Animaciones */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+  border-bottom: 2px solid var(--color-text);
+}
+
+section#inicio {
+  background: #000000;
+}
+
+.btn-small {
+  background: var(--color-primary);
+  color: white; /* Asegura que el texto sea visible */
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-small:hover {
+  background: var(--color-secondary); /* Cambia el color de fondo en hover */
+  color: white !important; /* Asegura que el texto no desaparezca */
+  transform: scale(1.05);
+}
+
+/* Habilidades */
+.habilidades-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Cuadrícula flexible */
+  gap: 20px; /* Espacio entre habilidades */
+  padding: 20px;
+  max-width: 1000px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor */
+}
+
+.habilidad {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.habilidad:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.habilidad-icono {
+  width: 50px; /* Tamaño de los íconos */
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.habilidad h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.habilidad p {
+  margin: 0;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+/* Certificaciones */
+.certificados-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.certificados-lista li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background: #222222;
+  border-radius: 5px;
+}
+
+.btn-small {
+  background: var(--color-primary);
+  color: var(--color-text);
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn-small:hover {
+  background: var(--color-secondary);
+  transform: scale(1.05);
+}
+.proyectos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.proyecto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.proyecto:hover {
+  transform: scale(1.02);
+}
+
+.proyecto-info {
+  flex: 1;
+  text-align: left;
+}
+
+.proyecto-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.proyecto-info p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.tech-icons {
+  margin-top: 10px;
+}
+
+.tech-icons img {
+  width: 30px;
+  margin-right: 8px;
+}
+
+.proyecto-img {
+  flex: 1;
+  text-align: right;
+}
+
+.proyecto-img img {
+  width: 250px;
+  border-radius: 8px;
+}
+/* Estilos para el botón "Ver Proyecto" */
+.boton-ver-proyecto {
+  display: inline-block;
+  margin-top: 15px; /* Espacio entre los íconos y el botón */
+  padding: 10px 20px;
+  background-color: #007BFF; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  text-decoration: none; /* Quita el subrayado del enlace */
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.boton-ver-proyecto:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+  transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* Efecto al hacer clic en el botón */
+.boton-ver-proyecto:active {
+  transform: translateY(0); /* Vuelve a su posición original */
+}
+
+
+
+/* Sección Contacto */
+#contacto {
+  padding: 4rem 2rem;
+  background: #121212;
+  text-align: center;
+}
+
+.tarjeta-contacto {
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  max-width: 450px;
+  margin: 0 auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tarjeta-contacto:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilos de los datos de contacto */
+.info-contacto {
+  width: 100%;
+  text-align: left;
+}
+
+.info-contacto div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: background 0.3s;
+}
+
+.info-contacto div:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.icono-contacto {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+  filter: invert(100%);
+}
+
+/* Enlaces */
+.info-contacto a {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  transition: color 0.3s, transform 0.3s;
+}
+
+.info-contacto a:hover {
+  color: var(--color-secondary);
+  transform: scale(1.05);
+}
+
+/* Botón de contacto */
+.btn-contacto {
+  margin-top: 15px;
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+  background-color: var(--color-primary);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn-contacto:hover {
+  background: var(--color-secondary);
+  transform: scale(1.1);
+}
