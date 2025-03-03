@@ -420,3 +420,48 @@ section#inicio {
   background: var(--color-secondary);
   transform: scale(1.1);
 }
+/* Estilos para la sección de Ciberseguridad */
+#ciberseguridad {
+  padding: 40px 20px;
+  background: #121212;
+  color: #fff;
+  text-align: center;
+}
+
+#ciberseguridad h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.ciberseguridad-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.ciberseguridad-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ciberseguridad-list li {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  padding-left: 40px;
+  position: relative;
+  color: #ccc;
+}
+
+.ciberseguridad-list li .tool-icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+
+.ciberseguridad-list li strong {
+  color: #fff;
+  font-weight: 600;
+}
